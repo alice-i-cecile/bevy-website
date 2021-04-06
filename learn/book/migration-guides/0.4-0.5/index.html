@@ -1,0 +1,643 @@
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Bevy - 0.4 to 0.5" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bevyengine.org&#x2F;&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.4-0.5&#x2F;" />
+        <meta property="og:image" content="https://bevyengine.org/assets/bevy_logo_fill.png" />
+        <meta property="og:description" content="Bevy is a refreshingly simple data-driven game engine built in Rust. It is free and open-source forever!" />
+        <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+        <link rel="stylesheet" href="/site.css" />
+        <link href="/atom.xml" rel="alternate" type="application/atom+xml" />
+        <title>Bevy - 0.4 to 0.5</title>
+        
+<script src="/optional-helpers.js"></script>
+
+    </head>
+
+    <body>
+        <div class="headerbar-container">
+            <nav class="headerbar container">
+                <a href="/" class="header-logo">
+                    <img src="/assets/bevy_logo_dark.svg" class="logo" alt="bevy logo" />
+                </a>
+                
+                    <label class="toggle-nav-mobile" for=show-book-nav>
+                        <svg alt="nav bars" width="24" height="24">
+                            <g fill="none" stroke="#ececec" stroke-width="2">
+                                <path d="m4 6h16" />
+                                <path d="m4 11h16" />
+                                <path d="m4 16h16" />
+                            </g>
+                        </svg>
+                    </label>
+                
+                <div class="header-item header-message">
+                    
+                        The Book
+                    
+                </div>
+                <div class="header-item header-push"></div>
+                
+
+
+
+    
+
+
+<a href="&#x2F;" class="header-item" >
+    Features
+</a>
+
+                
+
+
+
+    
+
+
+<a href="&#x2F;learn" class="header-item header-item-active"  >
+    Learn
+</a>
+
+                
+
+
+
+    
+
+
+<a href="&#x2F;news" class="header-item" >
+    News
+</a>
+
+                
+
+
+
+    
+
+
+<a href="&#x2F;community" class="header-item" >
+    Community
+</a>
+
+                <a class="header-item header-button header-button-donate" href="https://github.com/sponsors/cart">Donate <img src="/assets/heart.svg" class="header-button-donate-heart" alt="heart icon"/></a>
+                <a class="header-item header-button" href="/learn/book/getting-started/">Get Started</a>
+            </nav>
+        </div>
+        <section class="section">
+            <div class="container">
+                
+<div class="book-page">
+    <input type="checkbox" style="display: none" id="show-book-nav" />
+    <nav class="book-nav" role="navigation">
+        
+        
+        <ul class="book-nav-sections-container book-nav-sections">
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;introduction&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">1.</strong>
+        introduction
+    </a>
+    
+</li>
+
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">2.</strong>
+        getting started
+    </a>
+    
+    <ul class="book-nav-sections book-nav-sections-indented">
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;setup&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">2.1.</strong>
+        setup
+    </a>
+    
+</li>
+
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;apps&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">2.2.</strong>
+        apps
+    </a>
+    
+</li>
+
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;ecs&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">2.3.</strong>
+        ecs
+    </a>
+    
+</li>
+
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;plugins&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">2.4.</strong>
+        plugins
+    </a>
+    
+</li>
+
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;getting-started&#x2F;resources&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">2.5.</strong>
+        resources
+    </a>
+    
+</li>
+
+        
+    </ul>
+    
+</li>
+
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;next-steps&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">3.</strong>
+        next steps
+    </a>
+    
+</li>
+
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">4.</strong>
+        contributing
+    </a>
+    
+    <ul class="book-nav-sections book-nav-sections-indented">
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;code&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">4.1.</strong>
+        code
+    </a>
+    
+</li>
+
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;contributing&#x2F;docs&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">4.2.</strong>
+        docs
+    </a>
+    
+</li>
+
+        
+    </ul>
+    
+</li>
+
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;troubleshooting&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">5.</strong>
+        troubleshooting
+    </a>
+    
+</li>
+
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;faq&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">6.</strong>
+        faq
+    </a>
+    
+</li>
+
+            
+            
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;" class="book-nav-section-title">
+        <strong class="book-nav-section-number">7.</strong>
+        migration guides
+    </a>
+    
+    <ul class="book-nav-sections book-nav-sections-indented">
+        
+        
+        
+
+<li class="book-nav-section">
+    <a href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;0.4-0.5&#x2F;" class="book-nav-section-title-active book-nav-section-title" >
+        <strong class="book-nav-section-number">7.1.</strong>
+        0.4 to 0.5
+    </a>
+    
+</li>
+
+        
+    </ul>
+    
+</li>
+
+            
+        </ul>
+        
+    </nav>
+    <div class="book-content">
+        
+
+        
+        
+
+        
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+                
+                
+                
+            
+                
+                
+                
+            
+                
+                
+                
+            
+                
+                
+                
+            
+                
+                
+                
+            
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+                
+                
+                
+            
+                
+                
+                
+            
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+        
+            
+            
+
+            
+                
+                
+                
+            
+        
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+
+            
+
+        
+            
+            
+
+            
+             
+             
+                <a id="book-pager-bar-previous" href="https:&#x2F;&#x2F;bevyengine.org&#x2F;learn&#x2F;book&#x2F;migration-guides&#x2F;" class="book-pager-bar book-pager-bar-previous">
+                    <div class="book-pager-bar-icon book-pager-bar-icon-previous">
+                        <img src="/assets/pager_previous.svg" class="book-pager-image book-pager-image-left" />
+                    </div>
+                </a>
+             
+            
+
+            
+
+        
+
+        <h1>
+            
+                Migration Guide: 0.4 to 0.5
+            
+            
+        </h1>
+        <div class="media-content"><!-- TODO: link to release blog post here -->
+<h2 id="commands-mut-commands-systemparam-is-now-mut-commands-commands"><code>commands: &amp;mut Commands</code> SystemParam is now <code>mut commands: Commands</code></h2>
+<pre style="background-color:#2b2c2f;">
+<code class="language-rust" data-lang="rust"><span style="color:#5f6364;">// 0.4
+</span><span style="color:#c594c5;">fn </span><span style="color:#6699cc;">foo</span><span style="color:#5fb3b3;">(</span><span style="color:#f99157;">commands</span><span style="color:#5fb3b3;">: &amp;</span><span style="color:#c594c5;">mut</span><span style="color:#cccece;"> Commands</span><span style="color:#5fb3b3;">) {
+}
+
+</span><span style="color:#5f6364;">// 0.5
+</span><span style="color:#c594c5;">fn </span><span style="color:#6699cc;">foo</span><span style="color:#5fb3b3;">(</span><span style="color:#c594c5;">mut </span><span style="color:#f99157;">commands</span><span style="color:#5fb3b3;">:</span><span style="color:#cccece;"> Commands</span><span style="color:#5fb3b3;">) {
+}
+</span></code></pre>
+<p>Systems using the old <code>commands: &amp;mut Commands</code> syntax in 0.5 will fail to compile when calling <code>foo.system()</code>.</p>
+<p>This change was made because <a href="https:&#x2F;&#x2F;docs.rs/bevy_ecs&#x2F;0.5.0&#x2F;bevy_ecs/struct.Commands.html"><code>Commands</code>
+</a>
+now holds an internal <a href="https:&#x2F;&#x2F;docs.rs/bevy_ecs&#x2F;0.5.0&#x2F;bevy_ecs/struct.World.html"><code>World</code>
+</a>
+reference to enable safe entity allocations.</p>
+<p>Note: The internal <a href="https:&#x2F;&#x2F;docs.rs/bevy_ecs&#x2F;0.5.0&#x2F;bevy_ecs/struct.World.html"><code>World</code>
+</a> reference requires two lifetime parameters to pass Commands into a non-system function: <code>commands: &amp;'a mut Commands&lt;'b&gt;</code></p>
+<h2 id="commands"><a href="https:&#x2F;&#x2F;docs.rs/bevy_ecs&#x2F;0.5.0&#x2F;bevy_ecs/struct.Commands.html"><code>Commands</code></h2>
+<p></a> <code>insert()</code> API is now used for a single component</p>
+<pre style="background-color:#2b2c2f;">
+<code class="language-rust" data-lang="rust"><span style="color:#5f6364;">// 0.4
+// component
+</span><span style="color:#cccece;">commands</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">insert_one</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">entity</span><span style="color:#5fb3b3;">,</span><span style="color:#cccece;"> MyComponent</span><span style="color:#5fb3b3;">)
+</span><span style="color:#cccece;">commands</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">insert</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">entity</span><span style="color:#5fb3b3;">, (</span><span style="color:#cccece;">MyComponent</span><span style="color:#5fb3b3;">,))
+</span><span style="color:#5f6364;">// bundle
+</span><span style="color:#cccece;">commands</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">insert</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">entity</span><span style="color:#5fb3b3;">,</span><span style="color:#cccece;"> Bundle</span><span style="color:#5fb3b3;">)
+
+
+</span><span style="color:#5f6364;">// 0.5
+// component
+</span><span style="color:#cccece;">commands</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">insert</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">entity</span><span style="color:#5fb3b3;">,</span><span style="color:#cccece;"> MyComponent</span><span style="color:#5fb3b3;">)
+</span><span style="color:#5f6364;">// bundle
+</span><span style="color:#cccece;">commands</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">insert_bundle</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">entity</span><span style="color:#5fb3b3;">,</span><span style="color:#cccece;"> MyBundle</span><span style="color:#5fb3b3;">)
+</span></code></pre>
+<p>Instead of using <code>commands.insert_one()</code> for a single component, use <code>commands.insert()</code>.</p>
+<p>This means that <code>commands.insert()</code> will no longer accept a bundle as an argument. For bundles, use <code>commands.insert_bundle()</code>.</p>
+<p>This change helps to clarify the difference between components and bundles, and brings <a href="https:&#x2F;&#x2F;docs.rs/bevy_ecs&#x2F;0.5.0&#x2F;bevy_ecs/struct.Commands.html"><code>Commands</code>
+</a> into alignment with other Bevy APIs. It also eliminates the confusion associated with calling <code>commands.insert()</code> on a tuple for the single-component case.</p>
+<h2 id="timer"><a href="https:&#x2F;&#x2F;docs.rs/bevy_core&#x2F;0.5.0&#x2F;bevy_core/struct.Timer.html"><code>Timer</code></h2>
+<p></a> uses <code>Duration</code></p>
+<pre style="background-color:#2b2c2f;">
+<code class="language-rust" data-lang="rust"><span style="color:#5f6364;">// 0.4
+</span><span style="color:#c594c5;">if</span><span style="color:#cccece;"> timer</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">tick</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">time</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">delta_seconds</span><span style="color:#5fb3b3;">()).</span><span style="color:#6699cc;">finished</span><span style="color:#5fb3b3;">() { </span><span style="color:#5f6364;">/* do stuff */ </span><span style="color:#5fb3b3;">}
+</span><span style="color:#cccece;">timer</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">elapsed</span><span style="color:#5fb3b3;">() </span><span style="color:#5f6364;">// returns a bool
+
+// 0.5
+</span><span style="color:#c594c5;">if</span><span style="color:#cccece;"> timer</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">tick</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">time</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">delta</span><span style="color:#5fb3b3;">()).</span><span style="color:#6699cc;">finished</span><span style="color:#5fb3b3;">() { </span><span style="color:#5f6364;">/* do stuff */ </span><span style="color:#5fb3b3;">}
+</span><span style="color:#cccece;">timer</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">elapsed</span><span style="color:#5fb3b3;">() </span><span style="color:#5f6364;">// returns a `Duration`
+</span></code></pre>
+<p>Most of the methods of <a href="https:&#x2F;&#x2F;docs.rs/bevy_core&#x2F;0.5.0&#x2F;bevy_core/struct.Timer.html"><code>Timer</code>
+</a>
+now use <code>Duration</code> instead of <code>f32</code>.</p>
+<p>This change allows timers to have consistent, high precision. For convenience, there is also an
+<code>elapsed_secs</code> method that returns <code>f32</code>.  Otherwise, when you need an <code>f32</code>, use the
+<code>as_secs_f32()</code> method on <code>Duration</code> to make the conversion.</p>
+<h2 id="simplified-events">Simplified Events</h2>
+<pre style="background-color:#2b2c2f;">
+<code class="language-rust" data-lang="rust"><span style="color:#5f6364;">// 0.4
+</span><span style="color:#c594c5;">fn </span><span style="color:#6699cc;">event_reader_system</span><span style="color:#5fb3b3;">(
+    </span><span style="color:#c594c5;">mut </span><span style="color:#f99157;">my_event_reader</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">Local</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">EventReader</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">&gt;&gt;</span><span style="color:#cccece;">,
+    </span><span style="color:#f99157;">my_events</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">Res</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">Events</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">&gt;&gt;</span><span style="color:#cccece;">,
+</span><span style="color:#5fb3b3;">) {
+    </span><span style="color:#c594c5;">for</span><span style="color:#cccece;"> my_event </span><span style="color:#5fb3b3;">in</span><span style="color:#cccece;"> my_event_reader</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">iter</span><span style="color:#5fb3b3;">(&amp;</span><span style="color:#cccece;">my_events</span><span style="color:#5fb3b3;">) {
+        </span><span style="color:#5f6364;">// do things with your event
+    </span><span style="color:#5fb3b3;">}
+}
+
+</span><span style="color:#5f6364;">// 0.5
+</span><span style="color:#c594c5;">fn </span><span style="color:#6699cc;">event_reader_system</span><span style="color:#5fb3b3;">(</span><span style="color:#c594c5;">mut </span><span style="color:#f99157;">my_event_reader</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">EventReader</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">&gt;) {
+    </span><span style="color:#c594c5;">for</span><span style="color:#cccece;"> my_event </span><span style="color:#5fb3b3;">in</span><span style="color:#cccece;"> my_event_reader</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">iter</span><span style="color:#5fb3b3;">() {
+        </span><span style="color:#5f6364;">// do things with your event
+    </span><span style="color:#5fb3b3;">}
+}
+</span></code></pre>
+<p>You no longer need two system parameters to read your events. One <code>EventReader</code> is sufficient.</p>
+<p>Following the above example of using an <code>EventReader</code> to read events, you can now use <code>EventWriter</code> to create new ones.</p>
+<pre style="background-color:#2b2c2f;">
+<code class="language-rust" data-lang="rust"><span style="color:#5f6364;">// 0.4
+</span><span style="color:#c594c5;">fn </span><span style="color:#6699cc;">event_writer_system</span><span style="color:#5fb3b3;">(
+    </span><span style="color:#c594c5;">mut </span><span style="color:#f99157;">my_events</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">ResMut</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">Events</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">&gt;&gt;</span><span style="color:#cccece;">,
+</span><span style="color:#5fb3b3;">) {
+</span><span style="color:#cccece;">    my_events</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">send</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">);
+}
+
+</span><span style="color:#5f6364;">// 0.5
+</span><span style="color:#c594c5;">fn </span><span style="color:#6699cc;">event_writer_system</span><span style="color:#5fb3b3;">(
+    </span><span style="color:#c594c5;">mut </span><span style="color:#f99157;">my_events</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">EventWriter</span><span style="color:#5fb3b3;">&lt;</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">&gt;
+) {
+</span><span style="color:#cccece;">    my_events</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">send</span><span style="color:#5fb3b3;">(</span><span style="color:#cccece;">MyEvent</span><span style="color:#5fb3b3;">);
+}
+</span></code></pre><h2 id="appbuilder-add-resource-is-now-called-appbuilder-insert-resource"><code>AppBuilder::add_resource</code> is now called <code>AppBuilder::insert_resource</code></h2>
+<p>This is a small change to have function names on <code>AppBuilder</code> consistent with the <code>Commands</code> API.</p>
+<h2 id="textbundle">TextBundle</h2>
+<p>This bundle has been reworked to allow multiple differently-styled sections of text within a single bundle. <code>Text::with_section</code> was added to simplify the common case where you're only interested in one text section.</p>
+<pre style="background-color:#2b2c2f;">
+<code class="language-rust" data-lang="rust"><span style="color:#5f6364;">// 0.4
+</span><span style="color:#cccece;">TextBundle </span><span style="color:#5fb3b3;">{
+</span><span style="color:#cccece;">    text</span><span style="color:#5fb3b3;">:</span><span style="color:#cccece;"> Text </span><span style="color:#5fb3b3;">{
+</span><span style="color:#cccece;">        value</span><span style="color:#5fb3b3;">: &quot;</span><span style="color:#99c794;">hello!</span><span style="color:#5fb3b3;">&quot;.</span><span style="color:#6699cc;">to_string</span><span style="color:#5fb3b3;">(),
+</span><span style="color:#cccece;">        font</span><span style="color:#5fb3b3;">:</span><span style="color:#cccece;"> asset_server</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">load</span><span style="color:#5fb3b3;">(&quot;</span><span style="color:#99c794;">fonts/FiraSans-Bold.ttf</span><span style="color:#5fb3b3;">&quot;),
+</span><span style="color:#cccece;">        style</span><span style="color:#5fb3b3;">:</span><span style="color:#cccece;"> TextStyle </span><span style="color:#5fb3b3;">{
+</span><span style="color:#cccece;">            font_size</span><span style="color:#5fb3b3;">: </span><span style="color:#f99157;">60.0</span><span style="color:#5fb3b3;">,
+</span><span style="color:#cccece;">            color</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">Color</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">WHITE</span><span style="color:#5fb3b3;">,
+            ..</span><span style="color:#fac863;">Default</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">default</span><span style="color:#5fb3b3;">()
+        },
+    },
+    ..</span><span style="color:#fac863;">Default</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">default</span><span style="color:#5fb3b3;">()
+}
+
+</span><span style="color:#5f6364;">// 0.5
+</span><span style="color:#cccece;">TextBundle </span><span style="color:#5fb3b3;">{
+</span><span style="color:#cccece;">    text</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">Text</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">with_section</span><span style="color:#5fb3b3;">(
+        &quot;</span><span style="color:#99c794;">hello!</span><span style="color:#5fb3b3;">&quot;,
+</span><span style="color:#cccece;">        TextStyle </span><span style="color:#5fb3b3;">{
+</span><span style="color:#cccece;">            font</span><span style="color:#5fb3b3;">:</span><span style="color:#cccece;"> asset_server</span><span style="color:#5fb3b3;">.</span><span style="color:#6699cc;">load</span><span style="color:#5fb3b3;">(&quot;</span><span style="color:#99c794;">fonts/FiraSans-Bold.ttf</span><span style="color:#5fb3b3;">&quot;),
+</span><span style="color:#cccece;">            font_size</span><span style="color:#5fb3b3;">: </span><span style="color:#f99157;">60.0</span><span style="color:#5fb3b3;">,
+</span><span style="color:#cccece;">            color</span><span style="color:#5fb3b3;">: </span><span style="color:#cccece;">Color</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">WHITE</span><span style="color:#5fb3b3;">,
+        },
+        </span><span style="color:#cccece;">TextAlignment</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">default</span><span style="color:#5fb3b3;">()
+    ),
+    ..</span><span style="color:#fac863;">Default</span><span style="color:#5fb3b3;">::</span><span style="color:#cccece;">default</span><span style="color:#5fb3b3;">()
+}
+</span></code></pre></div>
+        <div class="book-pagers" />
+    </div>
+</div>
+
+
+            </div>
+        </section>
+    </body>
+</html>
