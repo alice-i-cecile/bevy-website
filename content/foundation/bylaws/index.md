@@ -9,6 +9,9 @@ header_message = "Foundation Bylaws"
 
 ## TODO
 
+* Add transparency pledge to CoI
+* Consider striking "board and advisory committees" section
+
 * discuss 5.11: "notice length" for meetings. five was the default. two is common. currently set to 2
 * discuss 5.5: term limits. 5 is max. 3 was default. set to 5 for least amount of upkeep.
 * Currently there are no limits to the number of terms you can serve. Imo this is ideal, but we can talk about it.
@@ -67,7 +70,7 @@ Unless a Director dies, resigns or is removed, he or she shall hold office for a
 
 The annual meeting of the Board shall be held the month of January at a date and time established by the Board for the purposes of electing directors and officers and transacting such business as may properly come before the meeting. If the day fixed for the annual meeting is a legal holiday at the place of the meeting, the meeting shall be held on the next succeeding business day. If the annual meeting is not held on the date designated therefor, the Board shall cause the meeting to be held as soon thereafter as may be convenient.
 
-### 5.7 Regular Mettings
+### 5.7 Regular Meetings
 
 By resolution, the Board may specify the date, time and place for the holding of regular meetings without other notice than such resolution.
 
