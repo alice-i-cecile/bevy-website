@@ -9,7 +9,6 @@ header_message = "Foundation Bylaws"
 
 ## TODO
 
-* Add transparency pledge to CoI
 * Consider striking "board and advisory committees" section
 
 * discuss 5.11: "notice length" for meetings. five was the default. two is common. currently set to 2
@@ -292,6 +291,10 @@ Each director and officer shall periodically sign a statement that affirms such 
 2. Has read and understands the policy,
 3. Has agreed to comply with the policy, and
 4. Understands that Bevy Foundation is a charitable organization and in order to maintain its federal tax exemption it must engage primarily in activities which accomplish one or more of its tax-exempt purposes.
+
+### 8.8 The Bevy Sponsorship Pledge
+
+Each director that receives money for their work on Bevy must sign and adhere to the Bevy Sponsorship Pledge. A copy is available on the Bevy website: <https://bevyengine.org/sponsorship-pledge>.
 
 ## Article 9. Amendments
 
