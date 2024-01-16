@@ -9,12 +9,6 @@ header_message = "Foundation Bylaws"
 
 ## TODO
 
-* discuss 5.11: "notice length" for meetings. five was the default. two is common. currently set to 2
-* discuss 5.5: term limits. 5 is max. 3 was default. set to 5 for least amount of upkeep.
-* Currently there are no limits to the number of terms you can serve. Imo this is ideal, but we can talk about it.
-* discuss 5.18 Remove: must be at least a majority of a quorum, but otherwise can be changed if you wish. Currently 2/3
-* discuss 7.5 fiscal year. can choose any fiscal year, including a calendar year. This date should be a month and the last date of that month, such as December 31.
-* discuss 7.6: rules of procedure. default is Roberts' Rules of Order. kind of stuffy, but also pretty standard: https://www.ulm.edu/staffsenate/documents/roberts-rules-of-order.pdf
 * discuss conflict of interest policy: 8.7: "periodic signing"
 
 ## Article 1. Offices
