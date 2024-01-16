@@ -9,8 +9,6 @@ header_message = "Foundation Bylaws"
 
 ## TODO
 
-* Consider striking "board and advisory committees" section
-
 * discuss 5.11: "notice length" for meetings. five was the default. two is common. currently set to 2
 * discuss 5.5: term limits. 5 is max. 3 was default. set to 5 for least amount of upkeep.
 * Currently there are no limits to the number of terms you can serve. Imo this is ideal, but we can talk about it.
@@ -134,29 +132,7 @@ At a meeting of the Board, one or more Directors may be removed from office, wit
 
 A vacancy in the position of Director may be filled by the affirmative vote of a majority of the remaining Directors though less than a quorum of the Board. A Director who fills a vacancy shall serve for the unexpired term of his or her predecessor in office.
 
-### 5.20 Board and Advisory Committees
-
-#### 5.20.1 Board Committees
-
-The Board, by resolution adopted by a majority of the Directors then in office, may designate and appoint one or more standing or temporary committees, each of which shall consist of two or more Directors. Such Board committees shall have and exercise the authority of the Directors in the management of the Corporation, subject to such limitations as may be prescribed by the Board; except that no committee shall have the authority to: (a) amend, alter or repeal these Bylaws; (b) elect, appoint or remove any member of any other committee or any Director or officer of the Corporation; (c) amend the Articles of Incorporation; (d) adopt a plan of merger or consolidation with another corporation; (e) authorize the sale, lease or exchange of all or substantially all of the property and assets of the Corporation not in the ordinary course of business; (f) authorize the voluntary dissolution of the Corporation or revoke proceedings therefor; (g) adopt a plan for the distribution of the assets of the Corporation; or (h) amend, alter or repeal any resolution of the Board which by its terms provides that it shall not be amended, altered or repealed by a committee. The designation and appointment of any such committee and the delegation thereto of authority shall not operate to relieve the Board or any individual Director of any responsibility imposed upon it, him or her by law.
-
-#### 5.20.2 Advisory Committees
-
-The Board may designate and appoint one or more advisory committees, each of which may consist of at least one Director and one or more other individuals to give advice and counsel to the Board. The Board shall establish the charge and tasks for the committee and appoint its chair and members.
-
-#### 5.20.3 Quorum; Manner of Acting
-
-A majority of the number of members of any committee shall constitute a quorum, and the act of a majority of the members of a committee present at a meeting at which a quorum is present shall be the act of the committee.
-
-#### 5.20.4 Resignation
-
-Any member of any committee may resign at any time by delivering written notice thereof to the President, the Secretary or the chairperson of such committee, or by giving oral or written notice at any meeting of such committee. Any such resignation shall take effect at the time specified therein, or if the time is not specified, upon delivery thereof and, unless otherwise specified therein, the acceptance of such resignation shall not be necessary to make it effective.
-
-#### 5.20.5 Removal of Committee Member
-
-The Board, by resolution adopted by a majority of the Directors in office, may remove from office any member of any committee elected or appointed by it.
-
-### 5.21 Compensation
+### 5.20 Compensation
 
 The Directors shall receive no compensation for their service as Directors but may receive reimbursement for expenditures incurred on behalf of the Corporation.
 
