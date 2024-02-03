@@ -47,6 +47,7 @@ Unanimously approved.
 Board discussed who should be treasurer. Easier for US persons, due to the need to go in to the bank branch to validate ID.
 
 **Cart for Treasurer.**
+
 Proposed by: Cart
 
 Unanimously approved, with discussion of this as a temporary position.
