@@ -89,7 +89,7 @@ Proposed by: James
 
 Discussed how to pay for the bills associated. May need to delay until bank account is open and has funds.
 
-Cart proposed to transfer a modest sum (~$2000) to fund the account from his personal account. Will cover hosting costs with that money, and then will be reimbursed.
+Cart will cover hosting costs personally initially, and then will be reimbursed.
 
 Unanimously approved.
 
