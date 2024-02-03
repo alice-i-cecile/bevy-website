@@ -5,6 +5,8 @@ date = 2024-02-03
 author = "Alice I. Cecile"
 +++
 
+<!-- more -->
+
 ## Attendees
 
 - Rob Swain
