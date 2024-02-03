@@ -87,13 +87,13 @@ Proposed by: James
 
 Discussed how to pay for the bills associated. May need to delay until bank account is open and has funds.
 
-Cart proposed to transfer a modest sum (~$2000) to fund the account from his personal account. Will cover hosting costs with that money, and then will be reimbursed by an interest-free loan.
+Cart proposed to transfer a modest sum (~$2000) to fund the account from his personal account. Will cover hosting costs with that money, and then will be reimbursed.
 
 Unanimously approved.
 
 ## Transferring ownership of the bevyengine GitHub account to the Foundation
 
-Unclear of how exactly we might do this. Broad agreement that this is probably correct to do.
+Unclear of how exactly we might do this. Broad agreement that this is Probably correct to do.
 
 Might need to consider how/if to add more admin privileges to manage attack surface.
 
