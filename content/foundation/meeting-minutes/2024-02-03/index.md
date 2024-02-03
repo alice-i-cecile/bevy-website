@@ -12,7 +12,7 @@ author = "Alice I. Cecile"
 - Rob Swain
 - James Liu
 - Carter Anderson
-- Alice Cecile
+- Alice I. Cecile
 - François Mockers
 
 ## Agenda
