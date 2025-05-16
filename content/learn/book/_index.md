@@ -34,3 +34,15 @@ Bevy is still in the early stages of development. Important features are missing
 
 If you are currently trying to pick an engine for your Next Big Project™, we recommend that you check out [Godot Engine](https://godotengine.org). It is currently much more feature-complete and stable. And it is also free, open-source, and [scriptable with Rust](https://github.com/godot-rust/gdext)!
 {% end %}
+
+## How do I learn Bevy?
+
+Like any game engine, Bevy is a large project, and there's a lot to learn!
+Everyone learns differently, so we offer a variety of complementary learning paths:
+
+* [Quickstart](learn/quickstart): Dive in and get your hands dirty, learning how to create a simple game in a hands-on tutorial for absolute beginners.
+* [The Book](learn/book): Read about the core concepts that make Bevy work, and browse our library of the advanced topics needed to ship a production game.
+* [docs.rs](https://docs.rs/bevy/latest/bevy/): Versioned API documentation that explains exactly what every struct, method and function mean. Module and crate docs are also great, and provide an overview of the structure and usage of specific areas of the code.
+* [API examples](https://bevyengine.org/examples/api): Try out our APIs hands on, as part of larger runnable examples.
+* [Usage examples](https://bevyengine.org/examples/usage): Figure out how to solve specific game dev problems (like running a game in split screen) by shamelessly stealing from our runnable snippets.
+* [Game examples](https://bevyengine.org/examples/game): Get a sense of how to structure larger projects and tackle new genres with playable game stubs.
